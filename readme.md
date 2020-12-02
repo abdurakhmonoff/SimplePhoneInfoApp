@@ -1,4 +1,4 @@
-## Simple Phone App
+## Simple Phone Info App
 
 It's simple food app that gives information about phones.
 
