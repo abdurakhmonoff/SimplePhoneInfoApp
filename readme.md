@@ -1,6 +1,6 @@
 ## Simple Phone Info App
 
-It's simple phone info app and you can save phone/tablet informations in it.
+It's simple phone info app, that you can save phone/tablet informations in it.
 
 P.s: You can also learn how to use ListViews and GridViews from this repo.
 
