@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPhoneInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/edittext_box_bg">
+
+        <EditText
+            android:id="@+id/phone_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#DED7D7"
+            android:gravity="center_vertical"
+            android:hint="@string/phone_name"
+            android:maxLength="35"
+            android:paddingHorizontal="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="7.8"
+        android:background="@drawable/edittext_box_bg">
+
+        <EditText
+            android:id="@+id/phone_features_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#DED7D7"
+            android:gravity="top"
+            android:paddingTop="16dp"
+            android:hint="@string/phone_features"
+            android:paddingHorizontal="16dp" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_btn"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="#E5F96F"
+        app:cardCornerRadius="7dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/add"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

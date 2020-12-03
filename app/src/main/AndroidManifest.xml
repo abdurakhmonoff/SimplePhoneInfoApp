@@ -9,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PhoneApp">
+        <activity android:name=".PhoneInfo"></activity>
+        <activity
+            android:name=".PhoneModels"
+            android:label="Phones"
+            android:theme="@style/Theme.PhoneApp.WithActionBar" />
+        <activity
+            android:name=".PhoneTypes2"
+            android:label="Phone types"
+            android:theme="@style/Theme.PhoneApp.WithActionBar" />
+        <activity android:name=".AddPhoneInfo" />
+        <activity
+            android:name=".PhoneTypes"
+            android:label="Phone types"
+            android:theme="@style/Theme.PhoneApp.WithActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
