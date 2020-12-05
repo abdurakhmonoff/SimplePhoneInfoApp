@@ -17,17 +17,7 @@
             android:textSize="20sp"
             android:textColor="#000"
             android:layout_margin="30dp"
-            android:text="> Qo‘sh kamera: 12MP keng (asosiy) va ultrakeng;\n
-> Video yozuv: Dolby Vision HDR, 30 kadr/sekund;\n
-> Akkumulyator avtonomligi: 17 soat video tomoshasi;\n
-> Displey: Super Retina XDR, 6.1 dyuym;\n
-> Suvga chidamlilik: 6 metr/30 daqiqa;\n
-> Ekran rezolyusiyasi: 2532x1170 (460 piksel/dyuym);\n
-> Xotira: 64/128/256GB;\n
-> Chip: A14 Bionic;\n
-> Korpus mahsuloti: alyuminiy;\n
-> Ranglar: ko‘k, yashil, qizil, oq, qora;\n
-> Narxi: 799 AQSh dollari." />
+            android:text="Phone features" />
     </LinearLayout>
 
 </ScrollView>

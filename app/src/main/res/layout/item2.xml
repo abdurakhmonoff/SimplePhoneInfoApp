@@ -27,7 +27,7 @@
                 android:gravity="center"
                 android:paddingVertical="52dp"
                 android:paddingHorizontal="25dp"
-                android:text="Palov"
+                android:text="Samsung"
                 android:textColor="#000"
                 android:textSize="20sp" />
         </LinearLayout>
