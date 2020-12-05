@@ -1,6 +1,7 @@
-package com.asrorabdurahmonov.phoneapp
+package com.asrorabdurahmonov.phoneapp.utils
 
 import android.content.Context
+import com.asrorabdurahmonov.phoneapp.models.Phone
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -20,7 +21,8 @@ class MySharedPrefs(context: Context) {
         return if (sharedPrefs.contains("ALL_PHONES_JSON")) {
             val phonesJson = sharedPrefs.getString("ALL_PHONES_JSON", "")
             val type = object : TypeToken<ArrayList<Phone>>() {}.type
-            return gson.fromJson(phonesJson, type)
+            val castArray = gson.fromJson<ArrayList<Phone>>(phonesJson, type)
+            return castArray
         } else arrayListOf()
     }
 

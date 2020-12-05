@@ -1,4 +1,4 @@
-package com.asrorabdurahmonov.phoneapp
+package com.asrorabdurahmonov.phoneapp.models
 
 import java.io.Serializable
 

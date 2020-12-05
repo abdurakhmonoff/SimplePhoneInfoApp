@@ -16,6 +16,7 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {url  'http://dl.bintray.com/gigamole/maven/'}
         google()
         jcenter()
     }

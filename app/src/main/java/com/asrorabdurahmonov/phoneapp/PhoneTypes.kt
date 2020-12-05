@@ -3,6 +3,7 @@ package com.asrorabdurahmonov.phoneapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.asrorabdurahmonov.phoneapp.utils.MyAdapter
 import kotlinx.android.synthetic.main.activity_phone_types.*
 import kotlinx.android.synthetic.main.item.view.*
 

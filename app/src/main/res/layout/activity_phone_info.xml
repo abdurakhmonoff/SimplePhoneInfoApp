@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PhoneInfo">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/phone_features_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="30dp"
+            android:text="> Qo‘sh kamera: 12MP keng (asosiy) va ultrakeng;\n
+> Video yozuv: Dolby Vision HDR, 30 kadr/sekund;\n
+> Akkumulyator avtonomligi: 17 soat video tomoshasi;\n
+> Displey: Super Retina XDR, 6.1 dyuym;\n
+> Suvga chidamlilik: 6 metr/30 daqiqa;\n
+> Ekran rezolyusiyasi: 2532x1170 (460 piksel/dyuym);\n
+> Xotira: 64/128/256GB;\n
+> Chip: A14 Bionic;\n
+> Korpus mahsuloti: alyuminiy;\n
+> Ranglar: ko‘k, yashil, qizil, oq, qora;\n
+> Narxi: 799 AQSh dollari." />
+    </LinearLayout>
+
+</ScrollView>

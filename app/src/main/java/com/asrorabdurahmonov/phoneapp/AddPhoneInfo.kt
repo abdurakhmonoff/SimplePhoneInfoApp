@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.asrorabdurahmonov.phoneapp.models.Phone
+import com.asrorabdurahmonov.phoneapp.utils.MySharedPrefs
 import kotlinx.android.synthetic.main.activity_add_phone_info.*
 
 class AddPhoneInfo : AppCompatActivity() {
@@ -16,13 +18,15 @@ class AddPhoneInfo : AppCompatActivity() {
             val phoneFeatures = phone_features_input.text.toString()
             if (phoneFeatures != "" && phoneName != "") {
                 val phone = Phone(
+                    ((intent.getStringExtra("PHONE_TYPE")).toString()),
                     phoneName,
-                    phoneFeatures,
-                    (intent.getStringExtra("PHONE_TYPE")).toString()
+                    phoneFeatures
                 )
                 val allPhones = MySharedPrefs(this).getPhonesInfo()
                 allPhones.add(phone)
+                MySharedPrefs(this).savePhoneInfo(allPhones)
                 val intent = Intent(this, MainActivity::class.java)
+                Toast.makeText(this, "Phone successfully added!", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
             } else Toast.makeText(this, "Please, fill all gaps!", Toast.LENGTH_SHORT).show()
         }

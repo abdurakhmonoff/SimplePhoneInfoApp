@@ -4,19 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.cardview.widget.CardView
+    <com.gigamole.library.ShadowLayout
+        android:id="@+id/item_second_ct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginVertical="12dp"
-        android:elevation="2dp"
-        android:translationZ="10dp"
-        app:cardCornerRadius="3dp"
+        android:layout_marginHorizontal="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:alpha="100">
+        app:sl_shadow_angle="90"
+        app:sl_shadow_color="#80707070"
+        app:sl_shadow_distance="5dp"
+        app:sl_shadow_radius="5dp"
+        app:sl_shadowed="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,13 +27,14 @@
                 android:id="@+id/item_txt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/textview_bg"
                 android:gravity="center_vertical"
-                android:paddingVertical="25dp"
                 android:paddingHorizontal="25dp"
+                android:paddingVertical="25dp"
+                android:text="Palov"
                 android:textColor="#000"
                 android:textSize="20sp" />
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
+    </com.gigamole.library.ShadowLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

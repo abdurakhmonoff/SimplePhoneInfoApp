@@ -15,6 +15,7 @@
         android:divider="@null"
         android:dividerHeight="0dp"
         android:paddingVertical="15dp"
-        android:paddingHorizontal="15dp" />
+        android:paddingHorizontal="15dp"
+        tools:listitem="@layout/item2" />
 
 </LinearLayout>
