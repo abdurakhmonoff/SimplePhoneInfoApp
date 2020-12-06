@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         add_phone_btn.setOnClickListener {
             val intent = Intent(this, PhoneTypes::class.java)
             startActivity(intent)
+            finish()
         }
 
         phones_btn.setOnClickListener {
@@ -22,6 +23,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        finish()
+        finishAffinity()
     }
 }

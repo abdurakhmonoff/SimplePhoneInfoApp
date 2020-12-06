@@ -20,6 +20,7 @@ class PhoneTypes : AppCompatActivity() {
             val intent = Intent(this, AddPhoneInfo::class.java)
             intent.putExtra("PHONE_TYPE", view.item_txt.text.toString())
             startActivity(intent)
+            finish()
         }
     }
 
