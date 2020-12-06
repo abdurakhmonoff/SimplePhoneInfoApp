@@ -20,4 +20,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    override fun onBackPressed() {
+        finish()
+    }
 }
