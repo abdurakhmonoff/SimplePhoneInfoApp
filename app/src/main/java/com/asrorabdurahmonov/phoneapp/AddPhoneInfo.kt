@@ -1,6 +1,5 @@
 package com.asrorabdurahmonov.phoneapp
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,9 +24,7 @@ class AddPhoneInfo : AppCompatActivity() {
                 val allPhones = MySharedPrefs(this).getPhonesInfo()
                 allPhones.add(phone)
                 MySharedPrefs(this).savePhoneInfo(allPhones)
-                val intent = Intent(this, PhoneTypes::class.java)
                 Toast.makeText(this, "Phone successfully added!", Toast.LENGTH_SHORT).show()
-                startActivity(intent)
                 finish()
             } else Toast.makeText(this, "Please, fill all gaps!", Toast.LENGTH_SHORT).show()
         }
